@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ammar Footen — Local-First AI Infrastructure</title>
+<meta name="description" content="AI agents that run on your own hardware — and refuse to make things up. Deployment for SMEs and institutions. Your data never leaves your office.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#30363d; --text:#e6edf3;
+    --muted:#8b949e; --accent:#4ade80; --accent2:#60a5fa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,'Segoe UI',Roboto,sans-serif}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{padding:64px 0 32px;text-align:center}
+  h1{font-size:clamp(1.7rem,4.5vw,2.7rem);line-height:1.2;font-weight:800}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{color:var(--muted);margin-top:14px;font-size:1.05rem}
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.25rem;margin-bottom:18px;color:var(--accent2)}
+  .video{background:var(--panel);border:1px solid var(--line);border-radius:12px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.95rem}
+  video{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{font-size:1rem;margin-bottom:6px}
+  .price{font-size:1.5rem;font-weight:800;color:var(--accent)}
+  .per{color:var(--muted);font-size:.85rem}
+  ul{list-style:none;margin-top:10px}
+  li{padding-left:18px;position:relative;color:var(--muted);font-size:.93rem;margin:6px 0}
+  li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+  .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .shot{background:#000;border:1px solid var(--line);border-radius:12px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:12px}
+  .quote{background:var(--panel);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:14px 18px;font-family:ui-monospace,monospace;font-size:.85rem;margin:14px 0;color:var(--muted);white-space:pre-wrap}
+  footer{padding:44px 0 64px;text-align:center}
+  .cta{display:inline-block;background:var(--accent);color:#052e16;font-weight:700;text-decoration:none;padding:13px 30px;border-radius:10px;font-size:1rem}
+  .contact{color:var(--muted);margin-top:16px;font-size:.95rem}
+  a{color:var(--accent2)}
+  @media print{
+    body{background:#fff;color:#111}
+    .video,.shot{background:#f3f4f6;color:#666;border-color:#ddd}
+    :root{--text:#111;--muted:#555;--accent:#065f46;--accent2:#1e40af;--line:#ddd;--panel:#fafafa}
+    section{break-inside:avoid}
+    footer .cta{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AI agents that run on <em>your own hardware</em><br>— and refuse to make things up.</h1>
+  <p class="sub">Local-first AI infrastructure, deployed for SMEs and institutions.<br>Your files never leave your office. Your agent shows its sources.</p>
+</header>
+
+<section>
+  <h2>The 75-second version</h2>
+  <!-- Drop demo.mp4 (16:9) into this repo and it plays here automatically -->
+  <video controls muted preload="metadata" poster="" >
+    <source src="demo.mp4" type="video/mp4">
+  </video>
+  <p class="sub" style="margin-top:10px">Watch the agent query its own machine map, act on real files — then get <b style="color:var(--text)">refused</b> when it tries to assert something it cannot verify.</p>
+</section>
+
+<section>
+  <h2>The proof, in one exchange</h2>
+  <div class="quote">agent: /data/q3-report is the authoritative Q3 file<br>system: REJECTED — structural_gate<br>&nbsp;&nbsp;reason: that path is not in the machine's derived facts.<br>&nbsp;&nbsp;The agent may not invent structure. Ever.</div>
+  <p class="sub">Every fact an agent stores about your organisation is validated against mechanically collected ground truth. Hallucinated context doesn't just get flagged after the damage — it never gets stored.</p>
+  <div class="proof" style="margin-top:18px">
+    <div class="shot">[screenshot: mizan query against live files]</div>
+    <div class="shot">[screenshot: collector status — all sources current]</div>
+  </div>
+</section>
+
+<section>
+  <h2>Engagements</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="price">RM3–5k</span> <span class="per">fixed · 1 week</span>
+      <h3>Audit</h3>
+      <ul>
+        <li>Where your information lives and leaks</li>
+        <li>What AI can safely take over today</li>
+        <li>Written roadmap — useful even if we never work together</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="price">RM10–20k</span> <span class="per">fixed · 2–3 weeks</span>
+      <h3>Setup Sprint</h3>
+      <ul>
+        <li>Agent running on YOUR machines</li>
+        <li>Email, files, calendar wired in — nothing leaves site</li>
+        <li>Your team trained to run it without me</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="price">RM2–4k</span> <span class="per">monthly</span>
+      <h3>Retainer</h3>
+      <ul>
+        <li>Maintenance and new integrations</li>
+        <li>New workflows automated as they emerge</li>
+        <li>Priority response</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Who's behind this</h2>
+  <p class="sub">Ammar Footen — developer of <a href="https://2217441.github.io/Al-Mizan-Project/site/">Al-Mizan</a>, a knowledge system built on a simple discipline: <i>an agent must show where every claim comes from, or not make the claim.</i> The same discipline powers everything deployed here — applied to your business documents instead of classical texts.</p>
+</section>
+
+<footer>
+  <a class="cta" href="https://wa.me/6XXXXXXXXXX?text=Hi%20Ammar%20—%20saw%20your%20local-AI%20page.">WhatsApp me</a>
+  <p class="contact">or email: <b>YOUR@EMAIL.COM</b> &nbsp;·&nbsp; IIUM Gombak / remote worldwide</p>
+</footer>
+
+</div>
+</body>
+</html>
