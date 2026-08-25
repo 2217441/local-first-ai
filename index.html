@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ammar Footen — Local-First AI Infrastructure</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="AI agents on your own hardware — that refuse to make things up">
+<meta property="og:description" content="Local-first AI infrastructure, deployed for SMEs and institutions. Your files never leave your office.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:url" content="https://2217441.github.io/local-first-ai/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="og-image.png">
 <meta name="description" content="AI agents that run on your own hardware — and refuse to make things up. Deployment for SMEs and institutions. Your data never leaves your office.">
 <style>
   :root{
@@ -29,7 +37,7 @@
   li{padding-left:18px;position:relative;color:var(--muted);font-size:.93rem;margin:6px 0}
   li::before{content:"→";position:absolute;left:0;color:var(--accent)}
   .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-  .shot{background:#000;border:1px solid var(--line);border-radius:12px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:12px}
+  .shot{object-fit:cover;width:100%;background:#000;border:1px solid var(--line);border-radius:12px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:12px}
   .quote{background:var(--panel);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:14px 18px;font-family:ui-monospace,monospace;font-size:.85rem;margin:14px 0;color:var(--muted);white-space:pre-wrap}
   footer{padding:44px 0 64px;text-align:center}
   .cta{display:inline-block;background:var(--accent);color:#052e16;font-weight:700;text-decoration:none;padding:13px 30px;border-radius:10px;font-size:1rem}
@@ -65,8 +73,8 @@
   <div class="quote">agent: /data/q3-report is the authoritative Q3 file<br>system: REJECTED — structural_gate<br>&nbsp;&nbsp;reason: that path is not in the machine's derived facts.<br>&nbsp;&nbsp;The agent may not invent structure. Ever.</div>
   <p class="sub">Every fact an agent stores about your organisation is validated against mechanically collected ground truth. Hallucinated context doesn't just get flagged after the damage — it never gets stored.</p>
   <div class="proof" style="margin-top:18px">
-    <div class="shot">[screenshot: mizan query against live files]</div>
-    <div class="shot">[screenshot: collector status — all sources current]</div>
+    <img class="shot" src="shot-query.png" alt="mizan query against live files">
+    <img class="shot" src="shot-status.png" alt="collector status">
   </div>
 </section>
 
@@ -110,7 +118,7 @@
 
 <footer>
   <a class="cta" href="https://wa.me/601154056731?text=Hi%20Ammar%20%E2%80%94%20saw%20your%20local-AI%20page.">WhatsApp me</a>
-  <p class="contact">or email: <b>ammar.q@live.iium.edu.my</b> &nbsp;·&nbsp; IIUM Gombak / remote worldwide</p>
+  <p class="contact">or email: <b>ammar.q@live.iium.edu.my</b> &nbsp;·&nbsp; IIUM Gombak / remote worldwide · <a href="onepager.pdf">one-page PDF</a></p>
 </footer>
 
 </div>
